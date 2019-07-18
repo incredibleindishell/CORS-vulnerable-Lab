@@ -2,7 +2,7 @@
 # CORS misconfiguration vulnerable Lab
 This Repository contains CORS misconfiguration related vulnerable codes. One can configure the vulnerable code on local machine to perform practical exploitation of CORS related misconfiguration issues.
 
-I would like to say Thank You to @albinowax (For his work in CORS exploitation), AKReddy and Vivek Sir (For being great personalities who always supported me)
+I would like to say Thank You to @albinowax (For his work in CORS exploitation), AKReddy and Vivek Sir (For being great personalities who always supported me) and Andrew Sir - @vanderaj (for his encouraging words)
 
 ![](https://raw.githubusercontent.com/incredibleindishell/CORS-vulnerable-Lab/master/images/lab_login.png)
 
