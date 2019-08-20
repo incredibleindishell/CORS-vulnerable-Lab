@@ -1,9 +1,27 @@
 <?php 
 session_start();
-
-
 include('c0nnection.php');
 
+if(isset($_POST['login']))
+	{
+	
+     $uname=mysqli_real_escape_string($conn,@$_POST['username']);
+     $pass=mysqli_real_escape_string($conn,@$_POST['password']);
+     $run='select * from auth where username=\''.$uname.'\' and  password=\''.$pass.'\'';
+     $result = mysqli_query($conn, $run);
+ if (mysqli_num_rows($result) > 0) {
+
+ $row = mysqli_fetch_assoc($result);
+        $_SESSION['logged2']=true;
+       
+		     header('Location: index.php', true, 302);
+	  }
+	  
+else
+{
+echo "<script>alert('Are you sure, username/password was correct??');</script>";
+}
+}
 
 echo '<html>
 <head>
@@ -148,33 +166,10 @@ Login
 <form method=POST>
 Username <input type=text name=username value="ace">	&nbsp Password <input type=password name=password value="fire"><br><br>
 <input type=submit name=login value="Let me In =))">
-</form>
-
-
-
-';
+</form>';
 }
 
-if(isset($_POST['login']))
-	{
-	
-     $uname=mysqli_real_escape_string($conn,@$_POST['username']);
-     $pass=mysqli_real_escape_string($conn,@$_POST['password']);
-     $run='select * from auth where username=\''.$uname.'\' and  password=\''.$pass.'\'';
-     $result = mysqli_query($conn, $run);
- if (mysqli_num_rows($result) > 0) {
 
- $row = mysqli_fetch_assoc($result);
-        $_SESSION['logged2']=true;
-       
-		     header('Location: index.php', true, 302);
-	  }
-	  
-else
-{
-echo "<script>alert('Are you sure, username/password was correct??');</script>";
-}
-}
 ?>
 <style type="text/css">#cot_tl_fixed{background-color:black;position:fixed;bottom:0px;font-Asize:50px;left:0px;padding:3px 0;clip:_top:expression(document.documentElement.scrollTop+document.documentElement.clientHeight-this.clientHeight);_left:expression(document.documentElement.scrollLeft + document.documentElement.clientWidth - offsetWidth);}</style>
 <span style="color: white;">
