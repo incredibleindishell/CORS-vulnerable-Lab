@@ -58,6 +58,10 @@ In this scenario, application HTTP response header "Access-Control-Allow-Origin"
 Application accept any value specified in "Origin" header.
 ![](https://raw.githubusercontent.com/incredibleindishell/CORS-vulnerable-Lab/master/images/arbitrary_origin.png)
 
+Exploitation Demo
+
+![](https://github.com/incredibleindishell/CORS-vulnerable-Lab/blob/master/POCs/CORS_policy_arbitrary_origin_exploit.gif)
+
 <b>Application has bad "regex" Implementation to check Trusted Origin</b>
 
 Application is trusting whitelisted Origin.
@@ -79,6 +83,10 @@ Application accept "null" value specified in "Origin" header.
 
 Application is not accepting any value other then "null" "Origin".
 ![](https://raw.githubusercontent.com/incredibleindishell/CORS-vulnerable-Lab/master/images/null_origin%202.png)
+
+Exploitation Demo
+
+![](https://github.com/incredibleindishell/CORS-vulnerable-Lab/blob/master/POCs/CORS_policy_null_origin_exploit_chrome.gif)
 
 Ofcourse, 
 <br><b>--==[[ With Love From IndiShell ]]==--</b> <img src="https://web.archive.org/web/20140704135452/freesmileys.org/smileys/smiley-flag010.gif">
