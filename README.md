@@ -88,6 +88,10 @@ Exploitation Demo
 
 ![](https://github.com/incredibleindishell/CORS-vulnerable-Lab/blob/master/POCs/CORS_policy_null_origin_exploit_chrome.gif)
 
+<b> Ex-filtrating data to attacker controlled server
+
+![](https://github.com/incredibleindishell/CORS-vulnerable-Lab/blob/master/POCs/Data%20ex-filtration.gif)
+
 Ofcourse, 
 <br><b>--==[[ With Love From IndiShell ]]==--</b> <img src="https://web.archive.org/web/20140704135452/freesmileys.org/smileys/smiley-flag010.gif">
 
