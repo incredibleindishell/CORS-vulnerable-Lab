@@ -31,7 +31,7 @@ echo '<html>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <STYLE>
 body {
-background: url("https://raw.githubusercontent.com/incredibleindishell/sqlite-lab/master/images/head.jpg");
+background: url(images/head.jpg);
 	background-size: 100% 700px;
 font-family: Tahoma;
 color: white;
